@@ -1,5 +1,6 @@
 package com.example.ghostleo_dt.tsetbottomnavigationview;
 
+import com.example.ghostleo_dt.tsetbottomnavigationview.BottomNavigationHelper;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mContent = (FrameLayout) findViewById(R.id.content);
         mContentMsg = (TextView) findViewById(R.id.content_msg);
         mBottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+		BottomNavigationHelper.disableShiftMode(mBottomNavigationView);
 
         mBottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -38,6 +40,14 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.item3:
+                        mContentMsg.setText(item.getTitle());
+                        break;
+						
+					case R.id.item4:
+                        mContentMsg.setText(item.getTitle());
+                        break;
+						
+					case R.id.item5:
                         mContentMsg.setText(item.getTitle());
                         break;
                 }

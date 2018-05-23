@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#2b2b2b</color>
-    <color name="colorPrimaryDark">#4F4F4F</color>
-    <color name="colorAccent">#7B7B7B</color>
-    <color name="colorWithe">#EEEEEE</color>
+    <color name="colorPrimaryDark">#2b2b2b</color>
+    <color name="colorAccent">#898989</color>
+    
+	
+	<color name="bottomnavigation_icon_defalut">#868686</color>
+	<color name="bottomnavigation_icon_selected">#EEEEEE</color>
+	
 </resources>
